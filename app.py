@@ -14,10 +14,10 @@ import json
 import pickle
 import joblib
 
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
+from keras.preprocessing.text import Tokenizer
+from keras.preprocessing.sequence import pad_sequences
 
-from tensorflow.keras.models import load_model
+from keras.models import load_model
  
 # load model
 nlp_model = load_model('model_LSTM.h5')

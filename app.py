@@ -247,8 +247,7 @@ def predict_json():
     
    # y_pred = model.predict(x=[nlp_data, cat_data], batch_size=1024, verbose=1)
     y_pred=1
-    print("Lala")
-    print(input)
+
     #print(jsonify(input))
     #input_data = pd.read_csv(request.files.get("input_file"), header=None)
     #prediction = model.predict(input_data)
@@ -256,6 +255,6 @@ def predict_json():
     return jsonify({"Accident pedict":acc_lvl,"Potential Accident pedict":pot_acc_lvl})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
-    #app.run()
+    #app.run(host='0.0.0.0', port=5000)
+    app.run()
     
